@@ -3,9 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{14D7D85C-B902-4A26-8D57-5E64D33FDC42}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E0014BF-16F7-4C65-80AE-5DC169AE3FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lazulisoft.WebApi2WithStartupClass.Api", "src\Lazulisoft.WebApi2WithStartupClass.Api\Lazulisoft.WebApi2WithStartupClass.Api.csproj", "{3A2C9474-3F30-4161-A277-1CB82776C476}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A2C9474-3F30-4161-A277-1CB82776C476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2C9474-3F30-4161-A277-1CB82776C476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2C9474-3F30-4161-A277-1CB82776C476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2C9474-3F30-4161-A277-1CB82776C476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A2C9474-3F30-4161-A277-1CB82776C476} = {9E0014BF-16F7-4C65-80AE-5DC169AE3FCF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7BC158A-FEAA-43FE-8D3C-319C6446133C}
