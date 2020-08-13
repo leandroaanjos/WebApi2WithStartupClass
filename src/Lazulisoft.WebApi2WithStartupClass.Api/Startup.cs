@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
+using Lazulisoft.WebApi2WithStartupClass.Api.IoC.Unity;
 using Microsoft.Owin;
 using Newtonsoft.Json.Serialization;
 using Owin;
@@ -26,6 +27,10 @@ namespace Lazulisoft.WebApi2WithStartupClass.Api
             );
 
             ConfigureWebApi(config);
+
+            // Package: Unity.Container
+            // Unity DI
+            UnityInitializer.Initialize(config);
 
             app.UseWebApi(config);
         }
